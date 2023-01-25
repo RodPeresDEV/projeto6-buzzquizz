@@ -1,6 +1,6 @@
 body{
     background-color:  #E5E5E5;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 .containerPrincipal{
@@ -8,7 +8,7 @@ body{
 
 }
 
-/* */
+
 .cabecalho{
     display: flex;
     width: 100%;
@@ -30,6 +30,9 @@ h1{
 }
 
 .criacaoQuizz{
+    
+    
+    
     width: 1051px;
     height: 181px;
 
@@ -40,25 +43,62 @@ h1{
     border: 1px solid #D4D4D4;
 }   
 
+
+
+h2{     
+    display: flex;
+
+    width: 200px;
+    height: 107px;
+    
+    
+    text-align: center;
+    align-items: center;
+
+    color: #B9B9B9;
+    margin:  auto;
+}
+
+button{
+    display: flex;
+    
+    width: 136px;
+    height: 40px;
+    
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    border-radius: 25px;
+    border: 1px dashed #EC362D;
+    color: #EC362D;
+
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+/* Final do Criação Quizz*/
+
+
 .quizzFeitos{
     width: 1051px;
     height: 370px;
+
+    display: flex;
+    flex-wrap: wrap;
 
     margin: 0px auto;
     margin-top: 112px;
 
 }
 
-h2{   
-    display: flex;
+.quizzRealizados{
+    width: 330px;
+    height: 181px;
 
-    width: 250px;
-    height: 100px;
-    
-     
-    justify-content: center;
-    align-items: center;
-
-    color: #B9B9B9;
-    margin:  auto;
+    margin-top: 30px;
+    margin-left: 15px;
+    border: 1px solid black;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 65.1%, #000000 100%), url(image.png);
+    border-radius: 5px;
 }

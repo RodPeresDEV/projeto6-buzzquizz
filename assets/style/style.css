@@ -12,6 +12,7 @@ body {
 
 .cabecalho {
     display: flex;
+    
     width: 100%;
     height: 69px;
 
@@ -40,6 +41,14 @@ h1 {
 
 /* Final configurações do cabeçalho*/
 
+.escondido{
+    display:none;
+}
+
+.containerCentral{
+    display: flex;
+    flex-direction: column;
+}
 
 .criacaoQuizz {
 
@@ -145,9 +154,76 @@ h3 {
 /* Final Quizz ja produzidos*/
 
 
+/* Icinio Criação das perguntas*/
+
+/* Perguntas Iniciais*/
+.criarPerguntasIniciais{
+    display: flex;
+    flex-direction: column;
+
+    width: 600px;
+    height: auto;
+
+    position: fixed;
+    top:140px;
+    left: 420px;
+   
+    justify-content: space-between;
+
+}
+
+.tituloPerguntas{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 27px;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.caixaDePerguntas{
+    width: 600px;
+    height: 256px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+.perguntas{
+    width: 564px;
+    height: 46px;
+
+    margin-left: 16px;
+    margin-top: 9px;
+    
+    color: #BABABA;
+    font-size: 19px;
+    font-style: italic;
+
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+}
+
+.botaoPerguntas{
+    width: 367px;
+    height: 57px;
+
+    text-align: center;
+    align-items: center;
+    margin-top: 85px;
+
+    background-color: #EC362D;
+    color: #FFF5F4;
+
+    font-size: 21px;
+    font-weight: 400;
+}
+/* Perguntas Iniciais*/
+
+/* Pergintas para o quizz*/
 
 
-
+/* Pergintas para o quizz*/
 
 @media(max-width: 375px) {
     body {

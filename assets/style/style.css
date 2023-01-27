@@ -1,18 +1,20 @@
 body {
+    width: 1440px;
     background-color: #E5E5E5;
     font-family: 'Roboto', sans-serif;
 }
 
 .containerPrincipal {
-    width: 1440px;
+    width: 100%;
     height: auto;
 
+    justify-content: center;
 }
 
 
 .cabecalho {
     display: flex;
-    
+
     width: 100%;
     height: 69px;
 
@@ -23,6 +25,7 @@ body {
     top: 0px;
     left: 0px;
     position: fixed;
+    z-index: 1;
     margin-bottom: 77px;
 }
 
@@ -33,7 +36,6 @@ h1 {
 
     font-family: 'Roboto', sans-serif;
 
-    align-items: center;
     margin: auto;
 
     cursor: pointer;
@@ -41,10 +43,12 @@ h1 {
 
 /* Final configurações do cabeçalho*/
 
+.escondido{
+    display:none;
+}
 
-.containerCentral{
-    display: flex;
-    flex-direction: column;
+.containerCentral {
+    width: 100%;
 }
 
 .criacaoQuizz {
@@ -58,8 +62,6 @@ h1 {
     
     border: 1px dashed #D4D4D4;
 }
-
-
 
 h2 {
     display: flex;
@@ -157,19 +159,19 @@ h3 {
 .criarPerguntasIniciais{
     display: flex;
     flex-direction: column;
-    
+
     width: 600px;
     height: auto;
-    
+
     position: fixed;
     top:140px;
     left: 420px;
-    
+   
     justify-content: space-between;
-    
+
 }
 
-.tituloPerguntas{
+.tituloPerguntas {
     text-align: center;
     justify-content: center;
     margin-bottom: 27px;
@@ -178,21 +180,21 @@ h3 {
     font-weight: 700;
 }
 
-.caixaDePerguntas{
+.caixaDePerguntas {
     width: 600px;
     height: 256px;
-    
+
     background-color: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 }
 
-.perguntasIniciais{
+.perguntasIniciais {
     width: 564px;
     height: 46px;
     
     margin-left: 16px;
     margin-top: 9px;
-    
+
     color: #BABABA;
     font-size: 19px;
     font-style: italic;
@@ -201,7 +203,7 @@ h3 {
     border-radius: 5px;
 }
 
-.botaoPerguntas{
+.botaoPerguntas {
     width: 367px;
     height: 57px;
     
@@ -215,72 +217,152 @@ h3 {
     font-size: 21px;
     font-weight: 400;
 }
+
 /* Perguntas Iniciais*/
 
-/* Pergintas para o quizz*/
+
+/* Caixa para selecionar quizz*/
 
 .criaçaoPerguntasQuizz {
-    width: 601px;
+    width: 100%;
     height: auto;
-    
+
 }
 
-.box{
-    display: flex;
+.box {
+
     justify-content: space-between;
     width: 601px;
     height: 74px;
     
     background-color: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-    margin-top:22px;
+    margin: 22px auto;
 }
 
-.box:hover{
+.box:hover {
     transform: scale(1.01);
 }
 
 h4{
-    
+
     font-size: 20px;
-    font-weight: 700;  
+    font-weight: 700;
+
 }
 
-.box ion-icon{
+.box ion-icon {
     width: 26px;
     height: 23px;
-    
 }
 
-.box ion-icon, 
-h4{
-    margin: auto 18px;
+.textIcone {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.box ion-icon,
+h4 {
+    margin: auto 20px;
+}
+
+/* Caixa para selecionar quizz*/
+
+/* Para realizar as perguntas da criação do quizz*/
+
+.boxPergunta {
+    display: flex;
+    flex-direction: column;
+
+    width: 601px;
+    height: 825px;
+    background-color: #FFFFFF;
+
+    margin: auto;
+}
+
+.boxPergunta h4 {
+
+    margin: 22px 17px;
+
+}
+
+.boxPerguntasIniciais {
+    width: 564px;
+    height: 46px;
+
+
+    margin-top: 12px;
+    margin-left: 17px;
+
+    color: #BABABA;
+    font-size: 19px;
+    font-style: italic;
+
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
 }
 
 
-/* Pergintas para o quizz*/
+/* Para realizar as perguntas da criação do quizz*/
+
+
+/*Niveis das perguntas*/
+
+.nivelPerguntas {
+    width: 100%;
+    height: auto;
+
+    margin: 172px auto;
+}
+
+.boxNivel {
+    display: flex;
+    flex-direction: column;
+
+    width: 600px;
+    height: 316px;
+
+    margin: auto;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+.boxNivelPerguntas {
+    width: 564px;
+    height: 46px;
+
+
+    margin-bottom: 14px;
+    margin-left: 17px;
+
+    color: #BABABA;
+    font-size: 19px;
+    font-style: italic;
 
 @media(max-width: 375px) {
     body {
         width: 375px;
     }
-    
+
     .cabecalho,
     .containerPrincipal {
-        width: 100%;
+        width: 375px;
     }
-    
+
     .containerCentral{
         margin-top: -31px;
         
     }
-    
+
     .criacaoQuizz,
     .quizzFeitos {
         width: 340px;
         height: auto;
     }
-    
+
     .criacaoQuizz {
         height: 181px;
     }
@@ -291,11 +373,11 @@ h4{
     }
     
     .quizzRealizados {
-        
+
         width: 340px;
         margin: 14px auto;
     }
-    
+
 }
 
 .escondido{

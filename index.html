@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/reset.css">
     <link rel="stylesheet" href="./assets/style/style.css">
-
 </head>
 
 <body>
@@ -21,20 +20,19 @@
         </div>
 
         <div class="containerCentral">
-            <div class="criacaoQuizz escondido">
+            <div class="criacaoQuizz">
                 <h2>Você não criou nenhum quizz ainda :(</h2>
-                <button>Criar quizz</button>
+                <button onclick="criarQuizzes()">Criar quizz</button>
             </div>
 
-            <div class="quizzFeitos escondido">
-                <div class="quizzRealizados escondido">
+            <div class="quizzFeitos">
+                <div class="quizzRealizados">
                     <h3> </h3>
                 </div>
             </div>
 
             <!-- Criaçao das perguntas-->
-            <div class="criarPerguntasIniciais ">
-                <div class="escondido">
+            <div class="criarPerguntasIniciais escondido">
                     <div class="tituloPerguntas">Comece pelo começo</div>
                     <div class="caixaDePerguntas">
                         <input type="text" placeholder="    Título do seu quizz" class="perguntasIniciais">
@@ -44,8 +42,8 @@
                     </div>
                     <button class="botaoPerguntas">Prosseguir pra criar perguntas</button>
 
-                </div>
-                <div class="criaçaoPerguntasQuizz ">
+            </div>
+                <div class="criaçaoPerguntasQuizz escondido">
                     <div class="tituloPerguntas">Crie suas perguntas</div>
                     <div class="box">
                         <h4>Pergunta 1</h4>
@@ -67,7 +65,7 @@
 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="script.js"> </script>
+    <script src="./assets/script/script.js"> </script>
 </body>
 
 </html>

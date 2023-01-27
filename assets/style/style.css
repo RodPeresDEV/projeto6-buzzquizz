@@ -347,7 +347,7 @@ h4 {
 /*Niveis das perguntas*/
 
 
-@media(max-width: 375px) {
+@media screen (max-width: 375px) {
 
     .cabecalho,
     .containerPrincipal {

@@ -58,11 +58,10 @@
 
                 </div>
 
-                <div class="criaçaoPerguntasQuizz ">
+                <div class="criaçaoPerguntasQuizz escondido">
                     <div class="tituloPerguntas ">Crie suas perguntas</div>
                     <div class="Boxs">
                         <div class="boxCompleto">
-                            
                             <div class="boxPergunta">
                                 <h4>Pergunta 1</h4>
                                 <input type="text" placeholder="    Texto da pergunta" class="boxPerguntasIniciais">
@@ -82,17 +81,42 @@
                                 <input type="text" placeholder="    URL da imagem 3" class="boxPerguntasIniciais">
                             </div>
                         </div>
+
                         <div class="box">
-                            <h4>Pergunta 2</h4>
-                            <ion-icon name="create-outline"></ion-icon>
+                            <div class="textIcone">
+                                <h4>Pergunta 2</h4>
+                                <ion-icon name="create-outline"></ion-icon>
+                            </div>
                         </div>
-                        <div class="box">
-                            <h4>Pergunta 3</h4>
+
+                        <button class="botaoPerguntas">Prosseguir pra criar perguntas</button>
+                    </div>
+                   
+                </div>
+
+                <div class="nivelPerguntas ">
+                    <div class="box">
+                        <div class="textIcone">
+                            <h4>Nivel 1</h4>
                             <ion-icon name="create-outline"></ion-icon>
                         </div>
                     </div>
-                    <button class="botaoPerguntas">Prosseguir pra criar perguntas</button>
+                    <div class="boxNivel">
+                        <h4>Nivel 1</h4>
+                        <input type="text" placeholder="    Título do nível" class="boxNivelPerguntas">
+                        <input type="text" placeholder="    % de acerto mínima" class="boxNivelPerguntas">
+                        <input type="text" placeholder="    URL da imagem do nível" class="boxNivelPerguntas">
+                        <input type="text" placeholder="    Descrição do nível" class="boxNivelPerguntas">
+                    </div>
 
+                    <div class="box ">
+                        <div class="textIcone">
+                            <h4>Nivel 2</h4>
+                            <ion-icon name="create-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <button class="botaoPerguntas">Finalizar Quizz</button>
                 </div>
             </div>
         </div>

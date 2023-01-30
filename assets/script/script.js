@@ -4,5 +4,5 @@ function criarQuizzes() {
     esconderPrincipal.classList.add('escondido');
     //mostrar a tela de criação de quizz
     const aparecerCriacaoQuizz = document.querySelector('.criarPerguntasIniciais');
-    aparecerCriacaoQuizz.classList.remove('escondido')
+    aparecerCriacaoQuiazz.classList.remove('escondido')
 }
